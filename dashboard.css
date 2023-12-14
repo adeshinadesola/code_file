@@ -28,7 +28,7 @@
 }
 
 /* dark theme variable */
-.dark-theme{
+.dark-theme {
   --color-white: #131316;
   --color-light: #23232a;
   --color-dark: #ddd;
@@ -244,7 +244,6 @@ main {
   gap: 2rem;
   width: 96%;
   margin: 0.8rem 0.5rem;
-
 }
 
 main aside {
@@ -252,7 +251,6 @@ main aside {
   flex-direction: column;
   justify-content: space-between;
   height: 88vh;
-
 }
 
 main aside #close-btn {
@@ -330,7 +328,6 @@ main aside .updates a:hover {
 }
 
 /*-----------------Middle --------------------*/
-
 
 main section.middle .header {
   display: flex;
@@ -487,7 +484,7 @@ main .recent-transactions .transaction .service {
   gap: 1rem;
 }
 
-main .recent-transactions .transaction .service .icon{
+main .recent-transactions .transaction .service .icon {
   display: flex;
   align-items: center;
   padding: var(--padding-2);
@@ -500,7 +497,7 @@ main .recent-transactions .card-details {
   gap: 1rem;
 }
 
-main .recent-transactions .card-details .card{
+main .recent-transactions .card-details .card {
   display: flex;
   width: 3rem;
   height: 2.5rem;
@@ -509,19 +506,17 @@ main .recent-transactions .card-details .card{
   border-radius: var(--border-radius-2);
 }
 
-
-
 /* --------------- media Queries ----------------- */
-@media screen and (max-width : 1024px) {
-  nav .search-bar{
+@media screen and (max-width: 1024px) {
+  nav .search-bar {
     display: none;
   }
 
-  nav .profile-area{
+  nav .profile-area {
     gap: 2rem;
   }
 
-  nav .profile-area button#menu-btn{
+  nav .profile-area button#menu-btn {
     display: inline;
     background: transparent;
     color: var(--color-dark);
@@ -531,8 +526,7 @@ main .recent-transactions .card-details .card{
     grid-template-columns: 1fr;
   }
 
-
-  main aside{
+  main aside {
     position: fixed;
     top: 0;
     left: -100%;
@@ -545,12 +539,12 @@ main .recent-transactions .card-details .card{
   }
 
   @keyframes showSidebar {
-    to{
+    to {
       left: 0;
     }
   }
 
-  main aside button#close-btn{
+  main aside button#close-btn {
     display: inline-block;
     width: 3rem;
     height: 3rem;
@@ -562,87 +556,87 @@ main .recent-transactions .card-details .card{
     color: var(--color-dark);
   }
 
-  button:hover{
+  button:hover {
     cursor: pointer;
   }
 
-  main aside .sidebar{
+  main aside .sidebar {
     margin-top: 4rem;
   }
 
-  main aside .updates{
+  main aside .updates {
     display: none;
   }
 
-  main section.middle .cards{
+  main section.middle .cards {
     grid-template-columns: 1fr 1fr;
   }
 
-  main canvas{
-   margin: 3rem 0 1rem;
+  main canvas {
+    margin: 3rem 0 1rem;
   }
 
-}
+  @media screen and (max-width: 600px) {
+    nav .profile-area {
+      gap: 2.6rem;
+    }
 
-@media screen and (max-width: 600px) {
-  nav .profile-area {
-    gap: 2.6rem;
+    nav .profile h5,
+    nav .profile span {
+      display: flex;
+    }
+
+    main section.middle .cards {
+      grid-template-columns: 1fr;
+    }
+
+    main section.middle .fast-payment {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-top: 3rem;
+      gap: 1.4rem;
+    }
   }
 
-  nav .profile h5 , nav .profile span{
-    display: none;
+  @media screen and (min-width: 1024px) {
+    main section.right {
+      width: 23.4rem;
+    }
+
+    main aside {
+      position: fixed;
+      width: 18rem !important;
+    }
+    main section.middle {
+      margin-left: 20rem;
+    }
   }
-
-  main section.middle .cards{
-    grid-template-columns: 1fr;
+  .transcation-section {
+    margin-top: 20px;
+    background-color: cadetblue;
+    color: whitesmoke;
+    padding: 20px;
   }
-
-  main section.middle .fast-payment{
-    flex-direction: column;
-    align-items: flex-start;
-    margin-top: 3rem;
-    gap: 1.4rem;
+  .transaction-details {
+    display: flex;
+    justify-content: space-between;
+    background-color: #56555e;
+    padding: 20px;
   }
-}
-
-@media screen and (min-width:1024px){
-    main section.right{
-  width: 23.4rem;
-}
-
-main aside{
-   position: fixed;
-  width: 18rem !important;
-}
-main section.middle {
-  margin-left: 20rem;
-}
-}
-.transcation-section {
-  margin-top: 20px;
-  background-color: cadetblue;
-  color: whitesmoke;
-  padding: 20px;
-}
-.transaction-details {
-  display: flex;
-  justify-content: space-between;
-  background-color: #56555e;
-  padding: 20px;
-}
-.card .btn1{
-   padding: 10px;
-   border: 1px red;
-   border-radius: 10%;
-   background-color: rgb(151, 64, 64);
-   color: #f0eff5;
-}
-.card .btn2{
-  padding: 10px;
-   border: 1px red;
-   border-radius: 10%;
-   background-color: green;
-}
-.card .btn2 a{
-  color: #ffffff;
+  .card .btn1 {
+    padding: 10px;
+    border: 1px red;
+    border-radius: 10%;
+    background-color: rgb(151, 64, 64);
+    color: #f0eff5;
+  }
+  .card .btn2 {
+    padding: 10px;
+    border: 1px red;
+    border-radius: 10%;
+    background-color: green;
+  }
+  .card .btn2 a {
+    color: #ffffff;
+  }
 }

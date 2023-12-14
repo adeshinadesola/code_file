@@ -12,15 +12,26 @@
       rel="stylesheet"
     />
     <link href="dashboard.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/3fc5c9a34d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="login.css" />
   </head>
   <body class="container-fluid">
-    <nav>
+    <!--<nav>
       <div class="container">
         <a href="index.html">
           <img src="/images/logo1.png" class="logo" />
         </a>
         <div class="profile-area">
-          <div class="theme-btn">
+           <div class="theme-btn">
             <span class="material-icons active">light_mode</span>
             <span class="material-icons">dark_mode</span>
           </div>
@@ -28,12 +39,61 @@
             <div class="profile-photo">
               <img src="/images/profile.png" />
             </div>
-            <h5>Katherine Velemirov</h5>
-            <span class="material-icons">expand_more</span>
           </div>
           <button id="menu-btn">
             <span class="material-icons">menu</span>
           </button>
+        </div>
+      </div>
+    </nav> -->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="/images/logo1.png"
+            width="40"
+            height="40"
+            class="d-inline-block align-top"
+            alt=""
+          />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="">
+            <div class="profile-area">
+              <div class="profile">
+                <div class="profile-photo">
+                  <img src="/images/profile.png" />
+                </div>
+              </div>
+            </div>
+          </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://crypto.com/price">Market</a>
+            </li>
+          </ul>
+          <div class="btn btn-secondary">
+            <a href="login.html" class="text-decoration-none link-light"
+              >Log out Katherine</a
+            >
+          </div>
         </div>
       </div>
     </nav>
@@ -66,7 +126,12 @@
         <div class="header">
           <h1>Overview</h1>
         </div>
-
+        <div class="header">
+          <h4>Investor : Katherine Velemirov</h4>
+        </div>
+        <div class="header">
+          <h4>Co Investor : Kevin waters</h4>
+        </div>
         <div class="cards .text">
           <div class="card">
             <div class="top">
@@ -98,7 +163,7 @@
               </button>
             </div>
             <div class="middle">
-              <h1>$300,835.39</h1>
+              <h1>$3,900.000.00</h1>
               <img class="chip" src="/images/cashbalance.jpg" />
             </div>
           </div>
@@ -111,7 +176,7 @@
               </div>
             </div>
             <div class="middle">
-              <h1>$1,900,000.00</h1>
+              <h1>$3,510,000.00</h1>
               <img class="chip" src="/images/profit.jpg" />
             </div>
           </div>
@@ -150,6 +215,8 @@
             </div>
           </div>
         </div>-->
+        <br />
+        <br />
         <section class="transcation-section">
           <h1>Latest Transactions</h1>
           <div class="transaction-details">
@@ -176,12 +243,43 @@
         <!-- <canvas id="chart"></canvas>-->
       </section>
     </main>
-
+    <br />
+    <br />
+    <footer>
+      <div class="text-center bg-dark text-white p-3">
+        <p class="">
+          We believe it is your basic right to control your money, data and
+          identity.
+        </p>
+        <p>
+          Supported by cryptocurrency, the future of the internet: Web3 will be
+          more fair and equitable, owned by the builders, creators and users.
+          You.
+        </p>
+      </div>
+      <div class="text-center text-white p-3 bg-success">
+        <a href="#" class="text-white m-3 text-decoration-none">Apply</a>
+        <a href="#" class="text-white m-3 text-decoration-none">About</a>
+        <a href="#" class="text-white m-3 text-decoration-none">News</a>
+        <a href="#" class="text-white m-3 text-decoration-none">Contact</a>
+        <div class="icons">
+          <i class="fa-brands fa-facebook-f m-3"></i>
+          <i class="fa-brands fa-twitter m-3"></i>
+          <i class="fa-brands fa-instagram m-3"></i>
+        </div>
+        <p>@Copyright 2023 ISWB WEBSITE.</p>
+      </div>
+    </footer>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"
       integrity="sha512-QSkVNOCYLtj73J4hbmVoOV6KVZuMluZlioC+trLpewV8qMjsWqlIQvkn1KGX2StWvPMdWGBqim1xlC8krl1EKQ=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
     ></script>
   </body>
   <script src="/script/dashboard.js"></script>
