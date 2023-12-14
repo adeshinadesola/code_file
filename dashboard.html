@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="/images/logo1.png" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link href="dashboard.css" rel="stylesheet" />
+  </head>
+  <body class="container-fluid">
+    <nav>
+      <div class="container">
+        <a href="index.html">
+          <img src="/images/logo1.png" class="logo" />
+        </a>
+        <div class="profile-area">
+          <div class="theme-btn">
+            <span class="material-icons active">light_mode</span>
+            <span class="material-icons">dark_mode</span>
+          </div>
+          <div class="profile">
+            <div class="profile-photo">
+              <img src="/images/profile.png" />
+            </div>
+            <h5>Katherine Velemirov</h5>
+            <span class="material-icons">expand_more</span>
+          </div>
+          <button id="menu-btn">
+            <span class="material-icons">menu</span>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <!--End of Navbar -->
+    <main>
+      <!--<aside>
+        <button id="close-btn">
+          <span class="material-icons">close</span>
+        </button>
+        <div class="sidebar">
+          <a href="#" class="active">
+            <span class="material-icons">dashboard</span>
+            <h4>Dashboard</h4>
+          </a>
+        </div>-->
+      <!-- End of sidebar -->
+
+      <!--  <div class="updates">
+          <span class="material-icons">update</span>
+          <h4>Updates Available</h4>
+          <p>Security Updates</p>
+          <p>General Updates</p>
+          <a href="#">Update Now</a>
+        </div>
+      </aside>
+
+    -->
+
+      <section class="middle" style="width: 80vw">
+        <div class="header">
+          <h1>Overview</h1>
+        </div>
+
+        <div class="cards .text">
+          <div class="card">
+            <div class="top">
+              <div class="left">
+                <img src="/images/investmentsign.jpg" />
+                <h2>Investment</h2>
+              </div>
+              <!--<button type="submit" class="btn2">
+                <a href="deposit.html">Deposit</a>
+              </button>-->
+            </div>
+            <div class="middle">
+              <h1>$390,000.00</h1>
+              <img class="chip" src="/images/invested.jpg" />
+            </div>
+          </div>
+          <div class="card">
+            <div class="top">
+              <div class="left">
+                <img src="/images/dollarsign.jpg" />
+                <h2>Cash Balance</h2>
+              </div>
+              <button
+                type="button"
+                class="btn1"
+                onclick="alert('Unable to withdraw contact your agent for assistance @Agentwilliams_iswb@digdig.org')"
+              >
+                Withdraw
+              </button>
+            </div>
+            <div class="middle">
+              <h1>$300,835.39</h1>
+              <img class="chip" src="/images/cashbalance.jpg" />
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="top">
+              <div class="left">
+                <img src="/images/dollarsign.jpg" />
+                <h2>Profit</h2>
+              </div>
+            </div>
+            <div class="middle">
+              <h1>$1,900,000.00</h1>
+              <img class="chip" src="/images/profit.jpg" />
+            </div>
+          </div>
+        </div>
+        <!-- end of Cards-->
+        <!--<div class="monthly-report">
+          <div class="report">
+            <h3>Income</h3>
+            <div>
+              <details>
+                <h1>$29,023</h1>
+                <h6 class="success">+3.5%</h6>
+              </details>
+              <p>Compared to $25,937 last month</p>
+            </div>
+          </div>
+          <div class="report">
+            <h3>Cashback</h3>
+            <div>
+              <details>
+                <h1>$9.045</h1>
+                <h6 class="success">+7.1%</h6>
+              </details>
+              <p>Compared to $30,053 last month</p>
+            </div>
+          </div>
+
+          <div class="report">
+            <h3>Turnover</h3>
+            <div>
+              <details>
+                <h1>$230,224</h1>
+                <h6 class="danger">-17.8%</h6>
+              </details>
+              <p>Compared to $114,234 last month</p>
+            </div>
+          </div>
+        </div>-->
+        <section class="transcation-section">
+          <h1>Latest Transactions</h1>
+          <div class="transaction-details">
+            <h3>
+              <strong>Deposit</strong>
+            </h3>
+            <span>+390,000.00 USD</span>
+          </div>
+          <br />
+          <!--  <div class="transaction-details">
+            <h3>
+              <strong>Helping hands</strong>
+            </h3>
+            <span>+18,939.99 USD</span>
+          </div>
+          <br />
+          <div class="transaction-details">
+            <h3>
+              <strong>Helping hands</strong>
+            </h3>
+            <span>+27,939.99 USD</span>
+          </div>-->
+        </section>
+        <!-- <canvas id="chart"></canvas>-->
+      </section>
+    </main>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"
+      integrity="sha512-QSkVNOCYLtj73J4hbmVoOV6KVZuMluZlioC+trLpewV8qMjsWqlIQvkn1KGX2StWvPMdWGBqim1xlC8krl1EKQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+  <script src="/script/dashboard.js"></script>
+</html>

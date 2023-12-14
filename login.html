@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="login.css" />
+    <link rel="shortcut icon" href="/images/logo1.jpg" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="/images/logo1.png"
+            width="40"
+            height="40"
+            class="d-inline-block align-top"
+            alt=""
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://www.binance.com/en/markets/coinInfo"
+                >Market</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">About us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="login-body">
+      <div class="wrapper">
+        <header>Login</header>
+        <form name="login" action="dashboard.html">
+          <div class="field email">
+            <div class="input-area">
+              <input type="text" name="userid" placeholder="Email Address" />
+              <i class="icon fas fa-envelope"></i>
+              <i class="error error-icon fas fa-exclamation-circle"></i>
+            </div>
+            <div class="error error-txt">Email can't be blank</div>
+          </div>
+          <div class="field password">
+            <div class="input-area">
+              <input type="password" name="pswrd" placeholder="Password" />
+              <i class="icon fas fa-lock"></i>
+              <i class="error error-icon fas fa-exclamation-circle"></i>
+            </div>
+            <div class="error error-txt">Password can't be blank</div>
+          </div>
+          <div class="pass-txt"><a href="#">Forgot password?</a></div>
+          <input type="button" onclick="check(this.form)" value="Login" />
+        </form>
+
+        <div class="sign-txt">Not yet member? <a href="#">Signup now</a></div>
+      </div>
+    </div>
+    <footer>
+      <div class="text-center bg-dark text-white p-3">
+        <p class="">
+          We believe it is your basic right to control your money, data and
+          identity.
+        </p>
+        <p>
+          Supported by cryptocurrency, the future of the internet: Web3 will be
+          more fair and equitable, owned by the builders, creators and users.
+          You.
+        </p>
+      </div>
+
+      <!-- <div class="text-center text-dark p-3">
+        <p class="">Got Question?</p>
+        <p>
+          For enquiries, complaints or requests, feel free to reach out to us
+        </p>
+        <div class="text-center">
+          <button class="btn btn-success mt-3">contact us</button>
+        </div>
+      </div>-->
+      <div class="text-center text-white p-3 bg-success">
+        <a href="#" class="text-white m-3 text-decoration-none">Apply</a>
+        <a href="#" class="text-white m-3 text-decoration-none">About</a>
+        <a href="#" class="text-white m-3 text-decoration-none">News</a>
+        <a href="#" class="text-white m-3 text-decoration-none">Contact</a>
+        <div class="icons">
+          <i class="fa-brands fa-facebook-f m-3"></i>
+          <i class="fa-brands fa-twitter m-3"></i>
+          <i class="fa-brands fa-instagram m-3"></i>
+        </div>
+        <p>@Copyright 2023 ISWB WEBSITE.</p>
+      </div>
+    </footer>
+
+    <script>
+      function check(form) {
+        if (
+          form.userid.value == "KatherineVelemirov@nationalbcc.org" &&
+          form.pswrd.value == "KathVelem107"
+        ) {
+          window.open("dashboard.html");
+        } else {
+          alert("Error Password or Username");
+        }
+      }
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/script/login.js"></script>
+  </body>
+</html>
